@@ -57,7 +57,7 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let posterURL = URL(string: baseURL + posterPath)
         
         cell.posterView.af.setImage(withURL: posterURL!)
-        print("testing")
+  
         return cell
     }
     
