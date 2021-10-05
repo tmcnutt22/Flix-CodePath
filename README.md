@@ -16,6 +16,7 @@
 
 ### Notes
 Describe any challenges encountered while building the app.
+-Remembering the steps to create a segue for the superhero additional user story; control+click and drag from where the user presses to the destination view controller, setting up the name of the new view controller, and adding that to the prepare function as the segue.destination in the MovieGridViewController.
 
 # Flix
 
