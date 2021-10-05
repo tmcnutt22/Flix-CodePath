@@ -75,7 +75,6 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let detailsViewController = segue.destination as! MovieDetailsViewController
         detailsViewController.movie = movie
         
-        print(movie["title"])
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
