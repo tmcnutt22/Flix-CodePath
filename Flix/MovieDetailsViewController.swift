@@ -20,11 +20,10 @@ class MovieDetailsViewController: UIViewController {
     let baseURL = "https://image.tmdb.org/t/p/"
     let imageSizePoster = "w185"
     let imageSizeBackDrop = "w780"
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
+        
         titleLabel.text = movie["title"] as? String
         synopsisLabel.text = movie["overview"] as? String
         synopsisLabel.sizeToFit()
@@ -39,15 +38,15 @@ class MovieDetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

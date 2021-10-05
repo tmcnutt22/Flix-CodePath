@@ -57,7 +57,7 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let posterURL = URL(string: baseURL + posterPath)
         
         cell.posterView.af.setImage(withURL: posterURL!)
-  
+        
         return cell
     }
     
@@ -78,5 +78,5 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
-
+    
 }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class SuperHeroDetailViewController: UIViewController {
     //outlets
@@ -35,19 +36,19 @@ class SuperHeroDetailViewController: UIViewController {
         let backDropViewPath = movie["backdrop_path"] as! String
         let backDropURL = URL(string: baseURL + imageSizeBackDrop + backDropViewPath)!
         backDropView.af.setImage(withURL: backDropURL)
- 
+        
         // Do any additional setup after loading the view.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

@@ -9,12 +9,12 @@ import UIKit
 import AlamofireImage
 
 class MovieGridViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-
     
-
+    
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
-
+    
     
     var movies = [[String: Any]]()
     
@@ -23,7 +23,7 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         
         collectionView.delegate = self
         collectionView.dataSource = self
-
+        
         // Do any additional setup after loading the view.
         let url = URL(string: "https://api.themoviedb.org/3/movie/297762/similar?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
@@ -57,10 +57,10 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         cell.posterView.af.setImage(withURL: posterURL!)
         return cell
     }
-        
+    
     
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
@@ -69,12 +69,9 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         let indexPath = collectionView.indexPath(for: cell)!
         
         let movie = movies[indexPath.row]
-  
+        
         let superHeroDetailsViewController = segue.destination as! SuperHeroDetailViewController
         superHeroDetailsViewController.movie = movie
-        
- 
     }
-
-
+    
 }
